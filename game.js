@@ -79,13 +79,10 @@ class Game {
     }
 
     placePlayer() {
-        while (true) {
             const {x, y} = this.placeRandomTile();   
             if (this.map[y][x] === '.') {
                 this.player.x = x;
                 this.player.y = y;
-                break;
-            }
         }
     }
 
